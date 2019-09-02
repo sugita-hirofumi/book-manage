@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ログイン画面</title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div class="top">
+		<form method="post" action="/general_menu">
+			<p>書籍管理システム</p>
+			<div class="field">
+				<label for="empnum">社員番号</label> <input type="text"
+					name="empnum" th:value="${empnum}" id="empnum">
+			</div>
+			<div class="field">
+				<label for="password">パスワード</label> <input type="password"
+					name="password" th:value="${password}" id="password">
+			</div>
+			<div class="login">
+				<input type="submit" name="signin" value="ログイン" id="signin">
+			</div>
+		</form>
+	</div>
+
+	<div class="lower">
+		<input type="button" name="newbutton" value="新規登録はこちら"
+			id="newbutton" onclick="location.href='/user_regist'">
+	</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>評価画面</title>
+　<link rel="stylesheet" type="text/css" href="css/review.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/header.js"></script>
+</head>
+<body>
+  <div class="header-inner">
+  </div>
+
+  <div class="container">
+    <div class="left-wrapper">
+      <p>＜並び替え＞</p>
+      <select name="search" id="search">
+        <option value="登録日が新しい順">登録日が新しい順</option>
+        <option value="登録日が古い順">登録日が古い順</option>
+        <option value="評価が高い順">評価が高い順</option>
+        <option value="評価が低い順">評価が低い順</option>
+      </select><br>
+      <input type="button" value="戻る" onclick="location.href='booklist'">
+    </div>
+    <div class="right-wrapper">
+      <div class="title"><p>タイトル：Java</p></div>
+      <div class="comment">
+        <p>氏名：カスガ　どう</p>
+        <p>登録日：2019/3/22</p>
+        <p>評価：★★★★☆</p>
+        <p>コメント：</p>
+        <p>継承が分からない人におすすめです。</p>
+      </div>
+      <div class="comment">
+        <p>氏名：イクスイ　くん</p>
+        <p>登録日：2019/3/22</p>
+        <p>評価：★★★★☆</p>
+        <p>コメント：</p>
+        <p>初心者向けの参考書です。</p>
+      </div>
+      <div class="comment">
+        <p>氏名：イクスイ　くん</p>
+        <p>登録日：2019/3/22</p>
+        <p>評価：★★★★☆</p>
+        <p>コメント：</p>
+        <p>初心者向けの参考書です。</p>
+      </div>
+      <div class="comment">
+        <p>氏名：イクスイ　くん</p>
+        <p>登録日：2019/3/22</p>
+        <p>評価：★★★★☆</p>
+        <p>コメント：</p>
+        <p>初心者向けの参考書です。</p>
+      </div>
+      <!-- <div class="comment" th:each="obj:${data}">
+        <span>氏名：</span><p th:text="*{obj.name}"></p>
+        <span>評価：</span><p th:text="*{obj.star}"></p>
+        <p>コメント：</p>
+        <p th:text="*{obj.comment}"></p>
+      </div> -->
+    </div>
+  </div>
+
+</body>
+</html>

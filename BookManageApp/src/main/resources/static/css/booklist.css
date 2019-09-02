@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* body{
+  margin: 0;
+} */
+
+.container{
+  width: 100%;
+  display: flex;
+
+
+}
+
+.left-wrapper{
+  width: 15%;
+  /* height: 491px; */
+  /* margin-right: 20px; */
+  border-right: solid 1px black;
+  text-align: center;
+  font-size: 20px;
+  /* background-color: red; */
+}
+
+ #orderchange{
+  width: 160px;
+  height: 30px;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search{
+  border-top: thin solid gray;
+  border-bottom: thin solid gray;
+}
+
+.search-box p{
+  margin-top: 10px;
+}
+
+.search-item p{
+  font-size: 15px;
+  margin-top: 15px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.search p{
+  margin-top: 20px;
+}
+
+.search-item{
+    margin-top: 10px;
+}
+
+#button, #clear{
+  width: 100px;
+  height: 50px;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#button{
+  margin-left: 15px;
+}
+
+#keyword{
+  width: 200px;
+  height: 23px;
+  /* margin-top: 10px; */
+}
+
+#sort{
+  width: 50px;
+  height: 29px;
+  margin-top: 10px;
+  border-bottom: thin solid gray;
+}
+
+.order p{
+  margin-top: 20px;
+}
+
+.right-wrapper{
+  width: 85%;
+  /* height: 491px; */
+}
+
+#top{
+  display: flex;
+}
+
+.image{
+  width: 30%;
+}
+
+.sample{
+  width: 180px;
+  height: 240px;
+  border: solid 1px black;
+  margin: 10px auto;
+}
+
+.book{
+  width: 60%;
+  border-bottom: solid 1px black;
+}
+
+.book p{
+  margin-top: 15px;
+}
+
+#bottom{
+  display: flex;
+  border-bottom: solid 1px black
+}
+
+.switch{
+  width: 30%;
+  text-align: center;
+}
+
+.comment p{
+  margin: 15px 0;
+}
+
+#borrow, #comment,#edit{
+  width: 160px;
+  height: 30px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+
+}
+
+
+.comment{
+  width: 60%;
+}
+
+.header-inner{
+  height: 130px;
+}
+
+*{
+  margin: 0px;
+}
+
+header{
+  background-color: #dcdcdc;
+  height: 110px;
+  width: 100%;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+}
+
+li{
+  list-style: none;
+}
+
+ul{
+  padding-left: 0;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.top{
+  height: 54px;
+  display: flex;
+}
+
+.header-logo{
+  width: 960px;
+  font-size: 20px;
+  font-family:   Helvetica , "游ゴシック", sans-serif;
+  padding: 11px;
+}
+
+
+.info{
+  width: 960px;
+  text-align: right;
+}
+
+.info li{
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+.logout{
+  background-color: darkgray;
+}
+
+.bottom{
+  height: 56px;
+}
+
+.menu{
+  display: flex;
+  padding-left: 0;
+}
+
+
+.menu li{
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  border: solid 1px darkgray;
+}

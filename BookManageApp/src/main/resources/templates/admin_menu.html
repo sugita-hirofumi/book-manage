@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>管理者用メニュー画面</title>
+　<link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+<body>
+  <header>
+
+    <div class="top">
+      <div class="header-logo"><a href="Admin_menu">書籍管理システム</a></div>
+      <div class="info">
+        <ul>
+          <li>社員番号：5555</li>
+          <li>ようこそイクスイさん</li>
+          <li class="logout"><a href="login">ログアウト</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <ul class="menu">
+        <li><a href="booklist">書籍一覧</a></li>
+        <li><a href="book_regist">書籍登録</a></li>
+        <li><a href="userlist">ユーザー一覧</a></li>
+        <li><a href="user_update">ユーザー情報更新</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+  <div class="return-status">
+    <p>イクスイさんの書籍返却状況</p>
+    <div class="return">
+      <table>
+        <tr>
+          <th>タイトル</th>
+          <th>ISBN番号</th>
+          <th>貸出日</th>
+          <th>返却予定日</th>
+          <th>返却状況</th>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>1234567890000</td>
+          <td>2019/5/13</td>
+          <td>2019/5/20</td>
+          <td>返却済み</td>
+        </tr>
+        <tr class="alert">
+          <td>PHP</td>
+          <td>1111111111111</td>
+          <td>2019/7/10</td>
+          <td>2019/7/15</td>
+          <td><a href="return.html">未返却</a></td>
+        </tr>
+        <tr class="out">
+          <td>Spring</td>
+          <td>1222222222222</td>
+          <td>2019/7/12</td>
+          <td>2019/7/26</td>
+          <td><a href="return.html">未返却</a></td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>1245777777777</td>
+          <td>2019/7/20</td>
+          <td>2019/7/30</td>
+          <td><a href="return.html">未返却</a></td>
+        </tr>
+      </table>
+      <!-- <tr th:each="obj : ${}">
+        <td th:text="*{obj.title}"></td>
+        <td th:text="*{obj.isbn}"></td>
+        <td th:text="*{obj.borrow}"></td>
+        <td th:text="*{obj.returndate}"></td>
+        <td th:text="*{obj.return}"></td>
+      </tr> -->
+    </div>
+  </div>
+</body>
+</html>

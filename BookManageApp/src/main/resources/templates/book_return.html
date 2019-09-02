@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>書籍返却画面</title>
+　<link rel="stylesheet" type="text/css" href="css/book_return.css">
+</head>
+<body>
+  <form action="general_menu" method="post">
+    <p>本へのコメントを入力してください。</p>
+    <div>
+      <label for="title">タイトル</label>
+      <input type="text" name="title" th:value="${title}" id="title" value="Java" readonly>
+    </div>
+    <div>
+      <label for="date">返却日</label>
+      <input type="text" name="today" th:value="${today}" id="today" value="2019/7/24" readonly>
+    </div>
+    <div>
+      <label for="owner">所有者</label>
+      <input type="text" name="owner" th:value="${owner}" id="owner" value="イクスイ" readonly>
+    </div>
+    <div>
+      <label for="star">評価</label>
+      <input type="text" name="star" th:value="${star}" id="star">
+    </div>
+    <div>
+      <label for="comment">コメント</label>
+      <textarea name="comment" th:value="${comment}" rows="8" cols="20"></textarea>
+    </div>
+    <div>
+     <input type="button" name="prev" value="戻る" class="return" onclick="history.back()">
+     <input type="submit" name="return" value="返却" class="return">
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+form{
+  margin: 80px auto;
+  width: 540px;
+  height: 550px;
+  padding: 40px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+p{
+  font-size: 25px;
+}
+
+label{
+  display: inline-block;
+  width: 110px;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+input{
+  width: 300px;
+  height: 30px;
+}
+
+
+textarea{
+  margin-top: 30px;
+  vertical-align:top;
+  line-height: 1.2em;
+  font-size: 15px;
+}
+
+#regist, #delete, #history{
+  margin-top: 40px;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+#title,#date,#owner,#writer,#isbn,#tag{
+  font-size: 18px;
+}
+
+.header-inner{
+  height: 130px;
+}
+
+*{
+  margin: 0px;
+}
+
+header{
+  background-color: #dcdcdc;
+  height: 110px;
+  width: 100%;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+}
+
+li{
+  list-style: none;
+}
+
+ul{
+  padding-left: 0;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.top{
+  height: 54px;
+  display: flex;
+}
+
+.header-logo{
+  width: 960px;
+  font-size: 20px;
+  font-family:   Helvetica , "游ゴシック", sans-serif;
+  padding: 11px;
+}
+
+
+.info{
+  width: 960px;
+  text-align: right;
+}
+
+.info li{
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+.logout{
+  background-color: darkgray;
+}
+
+.bottom{
+  height: 56px;
+}
+
+.menu{
+  display: flex;
+  padding-left: 0;
+}
+
+
+.menu li{
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  border: solid 1px darkgray;
+}

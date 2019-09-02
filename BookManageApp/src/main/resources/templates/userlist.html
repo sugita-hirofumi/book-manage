@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ユーザー一覧画面</title>
+    <link rel="stylesheet" type="text/css" href="css/userlist.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+  </head>
+  <body>
+    <div class="header-inner">
+    </div>
+
+    <p>ユーザー一覧</p>
+    <div>
+    <table>
+      <tr>
+        <th>社員番号</th>
+        <th>氏名</th>
+        <th>メールアドレス</th>
+        <th>管理者権限</th>
+      </tr>
+      <tr>
+        <td><a href="settings">1111</a></td>
+        <td>イクスイ</td>
+        <td>a@ixui</td>
+        <td>あり</td>
+      </tr>
+      <tr>
+        <td><a href="settings">3333</a></td>
+        <td>カスガ</td>
+        <td>b@kasuga</td>
+        <td>あり</td>
+      </tr>
+      <tr>
+        <td><a href="settings">6666</a></td>
+        <td>シュミット</td>
+        <td>c@vega</td>
+        <td>なし</td>
+      </tr>
+      <tr>
+        <td><a href="settings">77777</a></td>
+        <td>ダニエル</td>
+        <td>d@vega</td>
+        <td>なし</td>
+      </tr>
+      <tr>
+        <td><a href="settings">8888</a></td>
+        <td>ルイス</td>
+        <td>e@dare</td>
+        <td>なし</td>
+      </tr>
+      <!-- <tr th:each="obj:${data}">
+        <td><a href="settings" th:text="*{obj.num}"></a></td>
+        <td th:text="*{obj.name}"></td>
+        <td th:text="*{obj.mail}"></td>
+        <td th.text="*{obj.manage}"></td>
+      </tr> -->
+    </table>
+    </div>
+    <div class="button">
+    <input type="button" value="戻る" onclick="location.href='admin_menu'">
+    </div>
+  </body>
+</html>

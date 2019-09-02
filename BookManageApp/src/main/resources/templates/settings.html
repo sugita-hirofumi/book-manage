@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>ユーザー各種設定画面</title>
+　<link rel="stylesheet" type="text/css" href="css/settings.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/header.js"></script>
+</head>
+<body>
+  <div class="header-inner">
+
+  </div>
+
+  <form action="userlist" method="post">
+    <ul>
+      <li>氏名：<span>イクスイ</span></li>
+      <li>社員番号：<span>1111</span></li>
+    </ul>
+    <div>
+      <label for="type">ユーザー区分</label>
+      <div class="radio">
+        <input type="radio" name="userdivision" value="一般">一般
+        <input type="radio" name="userdivision" value="管理者">管理者
+      </div>
+    </div>
+    <div>
+      <label for="password">パスワード</label>
+      <input type="password" name="password" th:value="${password}" id="password">
+    </div>
+    <div>
+      <label for="checkpassword">確認用パスワード</label>
+      <input type="password" name="checkpassword" th:value="${password}" id="checkpassword">
+    </div>
+    <div class="updata">
+     <input type="submit" name="updata" value="更新" id="updata">
+    </div>
+    <div class="delete">
+      <input type="submit" name="delete" value="削除" id="delete">
+    </div>
+    <div class="button">
+      <input type="button" name="history" value="戻る" id="history" onclick="location.href='userlist'">
+    </div>
+  </form>
+</body>
+</html>

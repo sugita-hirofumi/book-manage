@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>書籍一覧画面</title>
+  <link rel="stylesheet" type="text/css" href="css/booklist.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/header.js"></script>
+</head>
+<body>
+  <div class="header-inner">
+  </div>
+
+  <div class="container">
+    <div class="left-wrapper">
+      <div class = "search-box">
+        <div class="order">
+          <p>＜並び替え＞</p>
+          <select name="orderchange" id="orderchange">
+            <option value="登録日が新しい順">登録日が新しい順</option>
+            <option value="登録日が古い順">登録日が古い順</option>
+            <option value="評価が高い順">評価が高い順</option>
+            <option value="評価が低い順">評価が低い順</option>
+            <option value="出版日が新しい順">出版日が新しい順</option>
+            <option value="出版日が古い順">出版日が古い順</option>
+          </select>
+        </div>
+        <div class="search">
+          <p>＜詳細検索＞</p>
+          <div class="search-item">
+            <p>タイトル</p>
+            <input type="text" name="keyword" id="keyword"><br>
+          </div>
+          <div class="search-item">
+            <p>ISBN番号</p>
+            <input type="text" name="keyword" id="keyword"><br>
+          </div>
+          <div class="search-item">
+            <p>著者</p>
+            <input type="text" name="keyword" id="keyword"><br>
+          </div>
+          <div class="search-item">
+            <p>出版日</p>
+            <input type="text" name="keyword" id="keyword"><br>
+          </div>
+          <div class="search-item">
+            <p>登録日</p>
+            <input type="text" name="keyword" id="keyword"><br>
+          </div>
+          <div class="search-item">
+            <p>所有者</p>
+            <input type="text" name="keyword" id="keyword"><br>
+          </div>
+          <div class="search-item">
+            <p>評価</p>
+            <input type="text" name="keyword" id="keyword"><br>
+          </div>
+          <div class="search-item">
+            <p>コメント</p>
+            <input type="text" name="keyword" id="keyword"><br>
+          </div>
+          <input type="reset" name="clear" value="クリア" id="clear">
+          <input type="button" name="button" value="検索" id="button">
+        </div>
+      </div>
+    </div>
+
+    <div class="right-wrapper">
+      <div id="top">
+        <div class="image">
+          <div class="sample">
+            <!-- <img src="#"> -->
+            <p>No Image</p>
+          </div>
+        </div>
+        <div class="book">
+          <p>1.Java</p>
+          <p>ISBN番号：1234567890123</p>
+          <p>著者：kasuga堂</p>
+          <p>出版日：2009/9/12</p>
+          <p>登録日：2018/7/30</p>
+          <p>所有者：イクスイ</p>
+          <p>平均評価：☆☆☆☆☆</p>
+        </div>
+      </div>
+      <div id="bottom">
+        <div class="switch">
+          <input type="button" name="borrow" id="borrow" value="貸出画面へ" onclick="location.href='book_lending'"><br>
+          <input type="button" name="comment" id="comment" value="評価を見る" onclick="location.href='review'"><br>
+          <input type="button" name="edit" id="edit" value="編集・削除" onclick="location.href='book_edit'">
+        </div>
+
+        <div class="comment">
+          <p>最も評価の高いレビュー</p>
+          <div class="comment">
+            <p>氏名：カスガ　どう</p>
+            <p>登録日：2019/7/7</p>
+            <p>評価：★★★★☆</p>
+            <p>コメント：</p>
+            <p>継承が分からない人におすすめです。</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="top">
+        <div class="image">
+          <div class="sample">
+            <p>No Image</p>
+          </div>
+        </div>
+        <div class="book">
+          <p>1.Java</p>
+          <p>ISBN番号：1234567890123</p>
+          <p>著者：kasuga堂</p>
+          <p>出版日：2009/9/12</p>
+          <p>登録日：2018/7/30</p>
+          <p>所有者：イクスイ</p>
+          <p>平均評価：☆☆☆☆☆</p>
+        </div>
+      </div>
+      <div id="bottom">
+        <div class="switch">
+          <input type="button" name="borrow" id="borrow" value="貸出画面へ" onclick="location.href='book_lending'"><br>
+          <input type="button" name="comment" id="comment" value="評価を見る" onclick="location.href='review'"><br>
+          <input type="button" name="edit" id="edit" value="編集・削除" onclick="location.href='book_edit'">
+        </div>
+        <div class="comment">
+          <p>最新の評価</p>
+          <div class="comment">
+            <p>氏名：カスガ　どう</p>
+            <p>登録日：2019/7/7</p>
+            <p>評価：★★★★☆</p>
+            <p>コメント：</p>
+            <p>継承が分からない人におすすめです。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

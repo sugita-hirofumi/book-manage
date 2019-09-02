@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>ユーザー情報更新画面</title>
+　<link rel="stylesheet" type="text/css" href="css/user_update.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/header.js"></script>
+</head>
+<body>
+  <div class="header-inner">
+
+  </div>
+
+  <form method="post" action="login">
+    <p>ユーザー情報編集</p>
+    <div>
+      <label for="num">氏名</label>
+      <input type="text" name="name" th:value="${name}" id="name" value="イクスイ" readonly>
+    </div>
+    <div>
+      <label for="num">社員番号</label>
+      <input type="text" name="num" th:value="${num}" id="num" value="3333" readonly>
+    </div>
+    <div>
+      <label for="password">パスワード</label>
+      <input type="password" name="password" th:value="${password}" id="password" value="111111">
+    </div>
+    <div>
+      <label for="checkpassword">確認用パスワード</label>
+      <input type="password" name="checkpassword" th:value="${password}" id="checkpassword" value="111111">
+    </div>
+    <div>
+      <label for="mail">メールアドレス</label>
+      <input type="email" name="mail" th:value="${mail}" id="mail" value="22222@com">
+    </div>
+    <div>
+      <input type="submit" name="push" id="push" value="更新">
+    </div>
+  </form>
+
+</body>
+</html>

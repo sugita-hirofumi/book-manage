@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+form{
+  margin: 80px auto;
+  width: 600px;
+  height: 450px;
+  /* padding: 1em; */
+  border: 1px solid black;
+  text-align: center;
+}
+
+label{
+  display: inline-block;
+  width: 160px;
+  margin: 40px 10px 0 10px;
+  font-size: 18px;
+}
+
+#password,#checkpassword{
+  width: 180px;
+  height: 30px;
+  font-size: 18px;
+}
+
+#updata,#delete{
+  margin-top: 35px;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+}
+
+#history{
+   margin-top: 35px;
+   width: 120px;
+   height: 40px;
+   font-size: 18px;
+ }
+
+ .button{
+   height: 60px;
+ }
+
+
+form li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+form ul{
+  text-align: left;
+}
+
+.delete{
+  margin-top: 30px;
+}
+
+.radio{
+  width: 180px;
+  height: 37px;
+  display: inline-block;
+}
+
+.updata,.delete{
+  display: inline-block;
+  margin:0 20px;
+}
+
+.header-inner{
+  height: 130px;
+}
+
+*{
+  margin: 0px;
+}
+
+header{
+  background-color: #dcdcdc;
+  height: 110px;
+  width: 100%;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+}
+
+li{
+  list-style: none;
+}
+
+ul{
+  padding-left: 0;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.top{
+  height: 54px;
+  display: flex;
+}
+
+.header-logo{
+  width: 960px;
+  font-size: 20px;
+  font-family:   Helvetica , "游ゴシック", sans-serif;
+  padding: 11px;
+}
+
+
+.info{
+  width: 960px;
+  text-align: right;
+}
+
+.info li{
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+.logout{
+  background-color: darkgray;
+}
+
+.bottom{
+  height: 56px;
+}
+
+.menu{
+  display: flex;
+  padding-left: 0;
+}
+
+
+.menu li{
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  border: solid 1px darkgray;
+}

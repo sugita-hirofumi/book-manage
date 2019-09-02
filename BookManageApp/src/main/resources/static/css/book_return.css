@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+form{
+  margin: 80px auto;
+  width: 540px;
+  height: 680px;
+  padding: 1em;
+  border: 1px solid black;
+  text-align: center;
+}
+
+p{
+  font-size: 15px;
+}
+
+label{
+  display: inline-block;
+  width: 110px;
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+#title,#today, #owner, #star{
+  width: 180px;
+  height: 30px;
+}
+
+
+textarea{
+  margin-top: 30px;
+  vertical-align:top;
+  line-height: 1.2em;
+  font-size: 15px;
+}
+
+.return{
+  margin-top: 40px;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+#title,#date,#owner{
+  font-size: 18px;
+}

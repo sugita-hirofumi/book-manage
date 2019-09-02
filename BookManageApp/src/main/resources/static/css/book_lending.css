@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+form{
+  margin: 80px auto;
+  width: 540px;
+  height: 480px;
+  padding: 1em;
+  border: 1px solid black;
+  text-align: center;
+}
+
+p{
+  font-size: 15px;
+}
+
+label{
+  display: inline-block;
+  width: 110px;
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+input{
+  width: 180px;
+  height: 30px;
+}
+
+
+
+.borrow{
+  margin-top: 20px;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+
+
+#title,#date,#owner,#return{
+  font-size: 18px;
+}
